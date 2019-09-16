@@ -1,8 +1,10 @@
+import { inputsAreValid } from "./util/inputs-are-valid.js";
+
 /**
  * Creates a new DOM manipulator.
  * @class
  */
-class AlertService {
+export class AlertService {
   constructor() {
     this.errorBox = document.getElementById("error");
   }
