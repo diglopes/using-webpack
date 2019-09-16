@@ -5,7 +5,7 @@
   "description": "A repository to register my understanding about Webpack",
   "main": "index.js",
   "scripts": {
-    "start": "webpack"
+    "start": "webpack --config webpack.config.js"
   },
   "repository": "git@github.com:diglopes/using-webpack.git",
   "author": "diglopes <diego-chez@hotmail.com>",
