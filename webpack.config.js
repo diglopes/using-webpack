@@ -8,5 +8,16 @@ module.exports = {
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist")
+  },
+  module: {
+    /* Everytime the webpack came across a file that matches with the 
+       regex it uses the loaders inserted into the array.
+    */
+    rules: [
+      {
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"] // <-- Run order
+      }
+    ]
   }
 };
