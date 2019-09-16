@@ -1,0 +1,17 @@
+{
+  "name": "using-webpack",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A repository to register my understanding about Webpack",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "repository": "git@github.com:diglopes/using-webpack.git",
+  "author": "diglopes <diego-chez@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8"
+  }
+}
