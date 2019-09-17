@@ -5,7 +5,8 @@
   "description": "A repository to register my understanding about Webpack",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js"
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": "git@github.com:diglopes/using-webpack.git",
   "author": "diglopes <diego-chez@hotmail.com>",
@@ -18,6 +19,8 @@
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.8"
+    "webpack-cli": "^3.3.8",
+    "webpack-merge": "^4.2.2",
+    "webpack-dev-server": "^3.8.1"
   }
 }
