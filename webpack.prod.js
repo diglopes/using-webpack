@@ -1,6 +1,7 @@
 const path = require("path");
 const common = require("./webpack.common");
 const webpackMerge = require("webpack-merge");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = webpackMerge(common, {
   mode: "production",
@@ -11,5 +12,6 @@ module.exports = webpackMerge(common, {
   output: {
     filename: "main.[contentHash].js",
     path: path.resolve(__dirname, "dist")
-  }
+  },
+  plugins: [new CleanWebpackPlugin()]
 });
