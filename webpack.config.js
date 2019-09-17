@@ -1,4 +1,5 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -6,9 +7,14 @@ module.exports = {
   entry: "./src/index.js",
   // The output config
   output: {
-    filename: "main.js",
+    filename: "main.[contentHash].js",
     path: path.resolve(__dirname, "dist")
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/template.html"
+    })
+  ],
   module: {
     /* Everytime the webpack came across a file that matches with the 
        regex it uses the loaders inserted into the array.
