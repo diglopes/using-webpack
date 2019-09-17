@@ -6,7 +6,7 @@ module.exports = webpackMerge(common, {
   mode: "development",
   // The output config
   output: {
-    filename: "main.js",
+    filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist")
   }
 });

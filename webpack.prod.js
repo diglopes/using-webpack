@@ -10,7 +10,7 @@ module.exports = webpackMerge(common, {
    * generating files with different names
    */
   output: {
-    filename: "main.[contentHash].js",
+    filename: "[name].[contentHash].bundle.js",
     path: path.resolve(__dirname, "dist")
   },
   plugins: [new CleanWebpackPlugin()]
